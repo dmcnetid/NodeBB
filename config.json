@@ -1,11 +1,11 @@
 {
-    "url": "http://localhost:4567",
+    "url": "http://forum.ethereum.net",
     "secret": "0f52f6af-17ec-435b-b1da-4995373cee9f",
     "database": "mongo",
     "port": 4567,
     "mongo": {
         "host": "127.0.0.1",
         "port": "27017",
-        "database": "forum"
+        "database": "prod"
     }
 }
