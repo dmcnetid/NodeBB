@@ -65,7 +65,9 @@
 								$('#content > *').wrapAll($('<div class="row"><div class="col-lg-9 col-xs-12"></div><div widget-area="sidebar" class="col-lg-3 col-xs-12"></div></div></div>'));
 							}
 						} else if (location === 'header' && !$('#content [widget-area="header"]').length) {
-							$('#content').prepend($('<div class="row"><div widget-area="header" class="col-xs-12"></div></div>'));
+							if (window.location.pathname.indexOf('/user/') === -1) {
+								$('#content').prepend($('<div class="row"><div widget-area="header" class="col-xs-12"></div></div>'));
+							}
 						}
 
 						area = $('#content [widget-area="' + location + '"]');
